@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="text-center">Comics</h1>
+<h1 class="whitebg text-center py-5">DC Comics</h1>
 
 <div class="container">
 

@@ -6,7 +6,7 @@
         <div>
             <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
         </div>
-        <p>Price: {{$comic->price}}</p>
+        <p>Price: {{$comic->price}} €</p>
         <p>Series: {{$comic->series}}</p>
         <p>Sale date: {{$comic->sale_date}}</p>
         <p>Type: {{$comic->type}}</p>
