@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Edit Comic</h1>
+        <h1>Edit Comic {{ $comic->title }}</h1>
 
         <form action="{{ route('comics.update', $comic) }}" method="POST">
             @csrf
@@ -43,7 +43,10 @@
             </div>
 
               <button type="submit" class="btn btn-primary mb-5">Submit</button>
-        </form>
+
+            </form>
+            {{-- passo il paramentro che occorre nell'include- potrei passare anche ['title'=>$comic->title, 'id'=>$comic->id]--}}
+            @include('partials.form-delete', ['comic'=>$comic])
 
     </div>
 @endsection
