@@ -2,11 +2,11 @@
 
 @section('content')
 
-<h1 class="whitebg text-center py-5">DC Comics</h1>
+<h1 class="whitebg text-center py-3">DC Comics</h1>
 
 <div class="container">
 
-<table class="table table-striped">
+<table class="table table-striped table-dark">
     <thead>
       <tr>
         <th scope="col">ID</th>
@@ -23,7 +23,10 @@
                 <td>{{$comic->title}}</td>
                 <td>{{$comic->series}}</td>
                 <td>{{$comic->type}}</td>
-                <td> <a class="btn btn-primary" title="show" href="{{ route('comics.show', $comic) }}">Show</a> </td>
+                <td>
+                    <a class="btn btn-primary" title="show" href="{{ route('comics.show', $comic) }}">Show</a>
+                    <a class="btn btn-warning" title="edit" href="{{ route('comics.edit', $comic) }}">Edit</a>
+                </td>
             </tr>
         @endforeach
     </tbody>

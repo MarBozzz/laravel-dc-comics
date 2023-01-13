@@ -2,10 +2,11 @@
 
 body {
     background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
     color: white;
 }
 
-header, .whitebg {
+header, .whitebg, h1 {
     background-color: rgba($color: #000000, $alpha: .7);
 }
 
